@@ -1,0 +1,66 @@
+/* socse.css */
+
+.socse-container {
+  display: flex;
+}
+.heading {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(255, 255, 255, .1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  color: black;
+}
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  left: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(128, 0, 0, 0.7);
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+/* .sidebar {
+  width: 200px;
+  background-color: rgba(128, 0, 0, 0.7); /* Maroon color */
+  /* color: #fff;
+  padding: 20px;
+  top: 0%;
+  left: 0%;
+  height: 100vh; /* Full height of the viewport */
+/* } */ 
+
+.sidebar h2 {
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #fff; /* White color on hover */
+  color: #800000; /* Maroon text on hover */
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1; /* Take up remaining width */
+}
